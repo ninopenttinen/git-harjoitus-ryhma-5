@@ -8,7 +8,7 @@ if [ -z $CURTIP ] ; then
   CURTIP=1
 fi
 
-TIPREPO=~/tips
+TIPREPO=~/repo/gittips/tips # CHANGE THIS TO POINT INTO THE RIGHT DIRECTORY
 
 if [ $TOTD_HTTP ] ; then
   TIPLABEL="HTTP $CURTIP"
