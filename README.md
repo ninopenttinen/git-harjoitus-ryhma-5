@@ -33,7 +33,7 @@ $ source .bashrc
 
 # Update log
 
-## v1.1
+## v1.2
 
 - Program can now be installed in any directory
 - The number of tips is no longer limited to 8
