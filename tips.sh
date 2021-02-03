@@ -1,18 +1,20 @@
 #!/bin/bash
 
+PROJECTDIR=`pwd`
+
 #TOTD_HTTP=1 # Configuration - set to 1, if tips from the server ...
-CURTIP=`cat ~/.curtip`
+CURTIP=`cat $PROJECTDIR/.curtip`
 
 # If no value in the current index file, start from start
 if [ -z $CURTIP ] ; then
   CURTIP=1
 fi
 
-TIPREPO=~/tips
+TIPREPO="$PROJECTDIR/tips"
 
 if [ $TOTD_HTTP ] ; then
   TIPLABEL="HTTP $CURTIP"
-  NUMTIPS=8 # This is not very clever and should be improved!
+  NUMTIPS=`find ./tips -type f | wc -l`
 else
   NUMTIPS=`ls $TIPREPO/*.txt | wc -l`
   TIPLABEL="$TIPREPO/$CURTIP.txt"
@@ -33,5 +35,5 @@ echo
 NEXT=`expr $CURTIP % $NUMTIPS`
 NEXT=`expr $NEXT + 1`
 
-echo $NEXT > ~/.curtip
+echo $NEXT > $PROJECTDIR/.curtip
 
