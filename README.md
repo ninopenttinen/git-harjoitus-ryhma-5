@@ -8,30 +8,32 @@ This is a tool printing out a refreshment of how to use the awesome git in vario
 
 To deploy this in your environment
 
-0) No warranty. Do this in your own responsibility.
+0. No warranty. Do this in your own responsibility.
 
-1) Place the contents of this repo somewhere in your homedirectory:
+1. Clone the project:
+
 ```
-$ cd
-$ mkdir tools
-$ cd tools
 $ git clone <this repo>
 ```
-2) Create a symbolic link to the tips diretory in your home directory:
+
+2. Add calling for the script to the end of the .bashrc file of your home directory:
+
 ```
-$ cd
-$ ln -s tools/tips
+$ echo "sh ~/gittips/tips.sh" >> .basrch
 ```
-3) Add calling for the script to the end of the .bashrc file of your home directory:
-```
-$ cd 
-$ echo "sh tools/gittips/tips.sh" >> .basrch
-```
-4) Try out
+
+4. Try out
+
 ```
 $ cd
 $ source .bashrc
 ```
-5) No warranty. Do this in your own responsibility.
 
+5. No warranty. Do this in your own responsibility.
 
+# Update log
+
+## v1.2
+
+- Program can now be installed in any directory
+- The number of tips is no longer limited to 8
