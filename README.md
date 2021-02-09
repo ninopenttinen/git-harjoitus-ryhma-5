@@ -37,3 +37,7 @@ $ source .bashrc
 
 - Program can now be installed in any directory
 - The number of tips is no longer limited to 8
+
+## v1.3
+
+- Added and edited tips
