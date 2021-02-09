@@ -1,3 +1,4 @@
 # First tip
-# Just the tip, please, I beg. Just the tip... just for a while...
+
+When you clone a project from Github, the branches will be hidden, but you can find them with "git branch -a" command, and move to them normally by using the "git checkout <branch>" command.
 
